@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- method - get / post -->
+    <form action="login.html" method="post">
+        Enter Name : <input type="text" name="username" placeholder="Enter name">
+        <br><br> Enter Password : <input type="password" name="userpwd" placeholder="Enter pwd">
+        <br><br> Choose Country :
+        <!-- <select name="country">
+            <option>Choose Country</option>
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">China</option>
+            <option value="">France</option>
+            <option value="">Japan</option>
+        </select> -->
+
+        <select name="country">
+            <option>Select Country</option>
+            <optgroup label="Asia">
+                <option value="">India</option>
+                <option value="">China</option>
+                <option value="">Thailand</option>
+                <option value="">Japan</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="">England</option>
+                <option value="">France</option>
+                <option value="">Italy</option>
+                <option value="">Germany</option>
+            </optgroup>
+        </select>
+
+        <br><br> Select Gender :
+        <input type="radio" id="male" name="gender" value="m">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="f">
+        <label for="female">Female</label>
+        <br><br> Select Course
+        <input type="checkbox"> BCA
+        <input type="checkbox"> BBA
+        <input type="checkbox"> MCA
+        <input type="checkbox"> MBA
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
