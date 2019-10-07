@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* #parent_1 h2 {
+            color: red;
+        } */
+        /* #parent_1 .child_1 h2 {
+            color: red;
+        } */
+        /* #parent_1 .child_1 h2,
+        #parent_1 .child_2 h2 {
+            color: red;
+        } */
+        
+        #parent_1 .child h2 {
+            color: red;
+        }
+        /* Combinators */
+        
+        #parent_1>h2 {
+            color: blue;
+        }
+        
+        #parent_1+p {
+            color: red;
+        }
+        
+        #parent_1~p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Basic Selectors</h1>
+
+    <div id="parent_1">
+        <h2>This is inside parent_1</h2>
+        <div class="child_1 child">
+            <h2>This is inside child_1</h2>
+        </div>
+        <h2>This is inside parent_1</h2>
+        <div class="child_2 child">
+            <h2>This is inside child_2</h2>
+        </div>
+        <h2>This is inside parent_1</h2>
+    </div>
+    <hr>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quidem officia dicta quod voluptatum natus odit quia ipsam fugiat, exercitationem, magni inventore optio quae expedita quaerat sed dolorum! Quis, aliquid.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quidem officia dicta quod voluptatum natus odit quia ipsam fugiat, exercitationem, magni inventore optio quae expedita quaerat sed dolorum! Quis, aliquid.
+    </p>
+
+    <hr>
+
+
+    <div id="parent_2">
+        <h2>This is inside parent_1</h2>
+        <div class="child_1">
+            <h2>This is inside child_1</h2>
+        </div>
+        <div class="child_2">
+            <h2>This is inside child_2</h2>
+        </div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quidem officia dicta quod voluptatum natus odit quia ipsam fugiat, exercitationem, magni inventore optio quae expedita quaerat sed dolorum! Quis, aliquid.
+    </p>
+
+</body>
+
+</html>

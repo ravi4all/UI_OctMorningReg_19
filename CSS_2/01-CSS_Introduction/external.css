@@ -1,0 +1,9 @@
+/* CSS Syntax
+h2      - Selector
+{}      - Expression
+color   - Property
+blue    - Value */
+
+h2 {
+    color: blue;
+}

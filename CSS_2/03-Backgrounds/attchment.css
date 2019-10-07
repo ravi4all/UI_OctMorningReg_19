@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+    background-image: url("http://www.hdnicewallpapers.com/Walls/Big/Cricket/MS_Dhoni_Batting_in_Cricket_World_Cup_2019_4K_Photos.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 550px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://i.pinimg.com/originals/23/49/d5/2349d544770c0b4536a3680b274f7e69.jpg");
+}
+
+#div_2 {
+    background-image: url("https://www.stumped.app/static-assets/waf-images/da/47/51/16-9/796-597/QLJ2QraXbD.jpg");
+}
+
+#div_3 {
+    background-image: url("https://images1.livehindustan.com/uploadimage/library/2019/04/22/16_9/16_9_1/ms_dhoni_photo_credit_pti__1555911230.jpg");
+}
+
+#div_4 {
+    background-image: url("https://akm-img-a-in.tosshub.com/sites/dailyo/fb_feed_images/story_image/201907/dhoni-fb_071219010331.jpg");
+}
+
+#div_5 {
+    background-image: url("https://images.in.com/uploads/2019/03/dhoni-2.jpg");
+}
