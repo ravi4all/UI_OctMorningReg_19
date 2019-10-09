@@ -1,0 +1,33 @@
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div {
+    /* border: 2px solid red; */
+    /* padding: 10px 12px; */
+    /* margin-bottom: 10px; */
+}
+
+.col {
+    width: 500px;
+}
+
+.col-1 {
+    float: left;
+    background-color: lightcoral;
+}
+
+.col-2 {
+    float: right;
+    background-color: lightblue;
+}
+
+.row {
+    border: 2px solid red;
+}
+
+.blank {
+    clear: both;
+}
