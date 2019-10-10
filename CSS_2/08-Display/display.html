@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* h2 {
+            display: inline;
+        }
+        
+        a {
+            display: block;
+        } */
+        
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        ul li {
+            display: inline-block;
+            background-color: lightgray;
+            width: 12%;
+            text-align: center;
+            vertical-align: top;
+            position: relative;
+        }
+        
+        ul li a {
+            color: red;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        ul li:hover {
+            /* background-color: orange; */
+            /* border-bottom: 1px solid red; */
+        }
+        
+        ul li:hover a {
+            /* color: #fff; */
+            /* border-bottom: 1px solid red; */
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: lightseagreen;
+        }
+        
+        .dropdown ul li {
+            display: block;
+            width: 100%;
+        }
+        
+        ul li:hover .dropdown {
+            display: block;
+        }
+        
+        .col {
+            display: inline-block;
+            background-color: lightgreen;
+            width: 33%;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Display Property</h1>
+
+    <!-- <h2>This is a heading</h2>
+    <a href="#">This is inline</a>
+    <a href="#">This is inline</a> -->
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Men</a>
+        </li>
+        <li>
+            <a href="#">Women</a>
+        </li>
+        <li>
+            <a href="#">Sports</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Tennis</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Kids</a>
+        </li>
+        <li>
+            <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Tennis</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Furniture</a>
+        </li>
+        <li>
+            <a href="#">More</a>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eum a harum ea in eius voluptate quod laborum alias ipsa officiis facere perferendis sapiente libero dolore odio, explicabo nobis reprehenderit.
+            </p>
+        </div>
+        <div class="col col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eum a harum ea in eius voluptate quod laborum alias ipsa officiis facere perferendis sapiente libero dolore odio, explicabo nobis reprehenderit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut cumque, culpa dignissimos, perspiciatis excepturi optio dicta, necessitatibus dolorem accusamus cupiditate exercitationem. Cupiditate nostrum, iste nulla quidem esse nobis impedit?
+            </p>
+        </div>
+        <div class="col col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eum a harum ea in eius voluptate quod laborum alias ipsa officiis facere perferendis sapiente libero dolore odio, explicabo nobis reprehenderit.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
