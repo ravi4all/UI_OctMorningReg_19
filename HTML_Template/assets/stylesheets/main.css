@@ -1,0 +1,58 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Generic Sections */
+
+#header {}
+
+#main-navigation {}
+
+#footer {}
+
+
+/* Page-1 */
+
+
+/* Page-2 */
