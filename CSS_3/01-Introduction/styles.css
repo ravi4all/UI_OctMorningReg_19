@@ -1,0 +1,15 @@
+.col {
+    display: inline-block;
+    width: 33%;
+    border: 1px solid red;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Chrome and Safari */
+    -webkit-box-sizing: border-box;
+    /* Mozilla */
+    -moz-box-sizing: border-box;
+    /* Opera */
+    -o-box-sizing: border-box;
+    /* Microsoft IE */
+    -ms-box-sizing: border-box;
+}

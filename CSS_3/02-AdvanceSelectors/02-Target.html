@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #login {
+            display: none;
+        }
+        
+        #login:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#login">Login Now</a>
+
+    <div id="login">
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter Email</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

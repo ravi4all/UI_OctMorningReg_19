@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Handling</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" readonly placeholder="Enter Name" required value="ram">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" readonly placeholder="Enter Email" value="ram@gmail.com" required autofocus autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" readonly value="pwd" placeholder="Enter Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                    <!-- <input type="text" maxlength="2"> -->
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Pattern</td>
+                <td>
+                    <input type="text" pattern="[a-z]{5}[0-9]{1}[@|#|$|%|&]" placeholder="Enter your card pattern" title="Please enter 5 alphabets, 1 digit and 1 special character">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="0" step="10" max="1000" onchange="op.value=value">
+                </td>
+                <td>
+                    <output id="op">0</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="30" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your message</td>
+                <td>
+                    <textarea spellcheck="false" style="resize:none;" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
