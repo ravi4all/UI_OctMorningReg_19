@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+}
+
+.col {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 20%;
+}

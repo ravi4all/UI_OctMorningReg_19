@@ -1,0 +1,44 @@
+body {
+    overflow: hidden;
+}
+
+#sun {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://www.stickpng.com/assets/images/580b585b2edbce24c47b2711.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+
+#earthWrapper {
+    border: 2px solid red;
+    height: 570px;
+    width: 570px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 00%;
+}
+
+#earth {
+    height: 100px;
+    width: 650px;
+    background-image: url("http://bestanimations.com/Earth&Space/Earth/earth-spinning-rotating-animation-24.gif");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: -8%;
+    animation: earth 5s infinite linear;
+}
+
+@keyframes earth {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
