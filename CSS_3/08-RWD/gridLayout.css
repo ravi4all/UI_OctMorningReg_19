@@ -1,0 +1,43 @@
+.row {
+    display: grid;
+    /* grid-template-columns: 20% 80%; */
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+#header {
+    border: 2px solid red;
+    grid-area: header;
+    margin-bottom: 20px;
+}
+
+#header .row {
+    grid-template-columns: 20% 60%;
+    grid-template-areas: "logo nav";
+}
+
+#header .logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#main {
+    border: 2px solid blue;
+    grid-area: main;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#sidebar_2 {
+    border: 2px solid green;
+    grid-area: sidebar;
+    margin-bottom: 20px;
+}
+
+#footer {
+    border: 2px solid;
+    grid-area: footer;
+}

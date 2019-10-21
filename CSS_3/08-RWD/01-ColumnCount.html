@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* ul {
+            column-count: 4;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        ul li {
+            background-color: lightgray;
+            padding: 4px;
+        } */
+        /* p {
+            column-count: 3;
+            column-rule: 2px solid red;
+            column-gap: 20px;
+        } */
+        
+        #parent {
+            column-count: 3;
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        h2 {
+            margin-top: 0px;
+        }
+        
+        #parent>div {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Column Count</h1>
+
+    <div id="parent">
+        <div class="col-1">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus libero, maiores harum ratione recusandae obcaecati quas sequi blanditiis ipsam cupiditate pariatur, nam rerum molestias quasi placeat! Aspernatur, eos et?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vel cupiditate quod. Architecto, quod. Rem atque obcaecati provident soluta pariatur? Perspiciatis consectetur ipsa, natus nostrum illo perferendis dignissimos nisi odit? Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Fuga itaque pariatur exercitationem, laborum consectetur tempora dicta, sapiente quos nostrum asperiores dolorum aliquam id numquam saepe molestiae voluptatum impedit quas corrupti.
+            </p>
+        </div>
+        <div class="col-2">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus libero, maiores harum ratione recusandae obcaecati quas sequi blanditiis ipsam cupiditate pariatur, nam rerum molestias quasi placeat! Aspernatur, eos et?
+            </p>
+        </div>
+        <div class="col-3">
+            <h2>This is column_3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus libero, maiores harum ratione recusandae obcaecati quas sequi blanditiis ipsam cupiditate pariatur, nam rerum molestias quasi placeat! Aspernatur, eos et?
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
