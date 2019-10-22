@@ -1,0 +1,135 @@
+@media(max-width:1200px) {
+    body {
+        background-color: lightgray;
+    }
+}
+
+.header_row {
+    display: grid;
+    /* grid-template-columns: 10% 50%; */
+    grid-template-columns: auto auto;
+    grid-template-areas: "logo nav" "logo search";
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+@media(min-width: 1200px) {
+    .header_row {
+        background-color: lightblue;
+    }
+}
+
+.logo {
+    width: 20%;
+    grid-area: logo;
+}
+
+@media (max-width:992px) {
+    .logo {
+        width: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .header_row {
+        justify-content: space-between;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+
+#main-navigation {
+    grid-area: nav;
+}
+
+#main-navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-navigation ul li {
+    margin: 0px 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.search {
+    grid-area: search;
+}
+
+input[type='text'] {
+    width: 50%;
+}
+
+.menu-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 30px;
+    top: 50px;
+    display: none;
+    pointer-events: none;
+}
+
+.menu-btn .line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: red;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 32px;
+    width: 32px;
+    height: 19px;
+    top: 49px;
+    opacity: 0;
+}
+
+@media(max-width:768px) {
+    .menu-btn {
+        display: block;
+    }
+    #main-navigation ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        left: 0px;
+        padding: 10px;
+        top: 100px;
+        color: #fff;
+        transition: 1s;
+    }
+    ul li {
+        padding: 10px 0px;
+    }
+    #main-navigation .menu-toggle:checked~ul {
+        transform: translateX(0%);
+    }
+    #main-navigation .menu-toggle:checked~.menu-btn .line:last-child {
+        opacity: 0;
+    }
+    #main-navigation .menu-toggle:checked~.menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    #main-navigation .menu-toggle:checked~.menu-btn .line:nth-child(2) {
+        transform: rotate(-45deg);
+        margin-top: -8px;
+    }
+    .search {
+        display: none;
+    }
+}
