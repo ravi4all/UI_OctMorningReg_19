@@ -1,0 +1,96 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Generic Sections */
+
+#header {}
+
+#header .row {
+    justify-content: space-between;
+}
+
+#header .header_top .help-desk {
+    flex: 1;
+}
+
+#header .header_top .logo {
+    flex: 4;
+    text-align: center;
+}
+
+#header .header_top .user_section {
+    flex: 1;
+    text-align: center;
+}
+
+#header .header_bottom .row {
+    justify-content: center;
+}
+
+#header ul {
+    display: flex;
+}
+
+#main-navigation {}
+
+#footer {}
+
+
+/* Page-1 */
+
+
+/* Page-2 */
