@@ -2,6 +2,8 @@
 
 body {
     margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Inconsolata', monospace;
 }
 
 * {
@@ -59,33 +61,226 @@ a {
 
 #header {}
 
-#header .row {
+#header .header_top .row {
     justify-content: space-between;
+    align-items: center;
+}
+
+#header .header_top {
+    margin-bottom: 30px;
 }
 
 #header .header_top .help-desk {
-    flex: 1;
+    width: 18%;
+    align-self: flex-end;
+}
+
+#header .header_top .help-desk span {
+    color: #9c9b9b;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#header .header_top .help-desk span:last-child {
+    margin-bottom: 0px;
+}
+
+#header .header_top .help-desk i {
+    color: red;
 }
 
 #header .header_top .logo {
-    flex: 4;
+    width: 45%;
     text-align: center;
+    border-bottom: 1px solid #9c9b9b;
+}
+
+#header .header_top .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#header .header_top .logo a {
+    color: #454546;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+#header .header_top .user_section li:not(:last-child) {
+    margin-right: 40px;
 }
 
 #header .header_top .user_section {
-    flex: 1;
+    width: 20%;
     text-align: center;
+}
+
+#header .header_top .user_section a {
+    color: #333;
+}
+
+#header .cart-box a {
+    display: block;
+    border: 1px solid #888;
+    padding: 10px 30px;
 }
 
 #header .header_bottom .row {
     justify-content: center;
+    position: relative;
 }
 
 #header ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#main-navigation {}
+#main-navigation {
+    width: 60%;
+}
+
+#main-navigation ul {
+    justify-content: space-around;
+}
+
+#main-navigation ul li {
+    text-transform: uppercase;
+}
+
+#main-navigation ul li a {
+    color: #828284;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    width: 80%;
+    z-index: 100;
+    /* display: none; */
+    transform: scale(1, 0);
+    transition: 1s;
+    border: 1px solid #828284;
+    background-color: #fff;
+    padding: 40px 20px;
+    transform-origin: top;
+}
+
+#main-navigation .dropdown .row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#main-navigation .dropdown .col {
+    width: 28%;
+}
+
+#main-navigation .dropdown h2 {
+    margin-bottom: 20px;
+}
+
+#main-navigation .dropdown ul {
+    margin-bottom: 20px;
+    display: block;
+}
+
+#main-navigation .dropdown ul li {
+    margin-bottom: 5px;
+}
+
+#main-navigation .dropdown ul li a {
+    padding-bottom: 0px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    /* display: block; */
+    transform: scale(1, 1);
+}
+
+#banner {
+    width: 500%;
+    display: flex;
+    animation: carousel 20s infinite linear;
+    position: relative;
+}
+
+#banner:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes carousel {
+    0%,
+    18% {
+        transform: translateX(0%);
+    }
+    20%,
+    38% {
+        transform: translateX(-20%);
+    }
+    40%,
+    58% {
+        transform: translateX(-40%);
+    }
+    60%,
+    78% {
+        transform: translateX(-60%);
+    }
+    80%,
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+#banner .slide {
+    position: relative;
+    width: 20%;
+}
+
+#banner .desc-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    text-align: center;
+}
+
+#banner .desc-wrapper .inner-wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#banner .desc-wrapper .desc {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#banner .desc h2 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#banner .desc p {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 6px;
+}
 
 #footer {}
 
