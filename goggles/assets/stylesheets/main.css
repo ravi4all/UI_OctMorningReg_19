@@ -208,6 +208,7 @@ a {
     display: flex;
     animation: carousel 20s infinite linear;
     position: relative;
+    margin-bottom: 70px;
 }
 
 #banner:after {
@@ -280,12 +281,76 @@ a {
     font-size: 20px;
     color: #fff;
     letter-spacing: 6px;
+    margin-bottom: 40px;
 }
 
 #footer {}
 
+.btn-1 {
+    display: inline-block;
+    border: 2px solid #ff4e00;
+    color: #fff;
+    width: 200px;
+    padding: 20px 0px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-1:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    transition: 1s;
+    width: 100%;
+    background: -webkit-linear-gradient( transparent 50%, #ff4e0082 50%);
+    background-size: 10px 10px;
+    left: -50%;
+    top: 50%;
+    transform: rotate(90deg) translate(-50%, -50%);
+    opacity: 0;
+}
+
+.btn-1:hover:after {
+    height: 500%;
+    opacity: 1;
+}
+
 
 /* Page-1 */
+
+#section_1 .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section_1 .col {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+#section_1 h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+#section_1 .card {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+}
+
+#section_1 .card h6 a {
+    color: #959596;
+}
+
+#section_1 .card p {
+    color: #ff4e00;
+}
+
+#section .card a i {
+    color: #cecbcb;
+}
 
 
 /* Page-2 */
