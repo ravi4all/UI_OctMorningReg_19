@@ -56,6 +56,24 @@ a {
     margin: 0 auto;
 }
 
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        width: 760px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
+
 
 /* Generic Sections */
 
@@ -136,6 +154,34 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width:1200px) {
+    #header .header_top .help-desk {
+        width: 21%;
+    }
+    #header .header_top .user_section {
+        width: 23%;
+    }
+}
+
+@media(max-width:992px) {
+    #header .header_top .help-desk {
+        width: 30%;
+    }
+    #header .header_top .user_section {
+        width: 30%;
+    }
+}
+
+@media(max-width:768px) {
+    #header .header_top .row {
+        display: block;
+        text-align: center;
+    }
+    #header .header_top .row>div {
+        width: 100%;
+    }
 }
 
 #main-navigation {

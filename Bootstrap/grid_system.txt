@@ -1,0 +1,7 @@
+Grid System
+
+.col-xl-*	Extra Large	> 1200px
+.col-lg-*	Large		> 992px
+.col-md-*	Medium		> 768px
+.col-sm-*	Small		> 576px
+.col-*		Extra Small	< 576px

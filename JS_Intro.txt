@@ -1,0 +1,21 @@
+Javascript
+Dynamic Client + Server (Node Js) + (Mongo DB) scripting language
+
+- Interpreted Language
+
+Netscape
+Nexus - Static
+
+Brendon Eich => 10 days
+JS - Self + Scheme = Functional Programming
+Mosaic - Dynamic => Mozilla
+
+Mocha - First name of JS
+Livescript
+Javascript
+
+JScript - ECMA
+
+ECMAScript
+
+
