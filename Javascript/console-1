@@ -1,0 +1,103 @@
+a = 120;
+120
+a
+120
+a = "hello"
+"hello"
+a = "10"
+"10"
+b = 10
+10
+typeof(a)
+"string"
+typeof(a)
+"string"
+typeof(b)
+"number"
+a
+"10"
+b
+10
+c = a + b;
+"1010"
+x = 11
+11
+c = a + b + x;
+"101011"
+a+b
+"1010"
+a+b+x
+"101011"
+c = b + x + a;
+"2110"
+c = a * b;
+100
+a - b
+0
+a/b
+1
+a
+"10"
+b
+10
+a == b
+true
+a === b
+false
+function add() {
+	x = 10;
+	y = 12;
+	z = x + y;
+	console.log(z);
+}
+undefined
+add()
+VM831:5 22
+undefined
+z = x - y;
+-2
+function add() {
+	var x1 = 10;
+	var y1 = 12;
+	var z1 = x1 + y1;
+	console.log(z1);
+}
+undefined
+add()
+VM904:5 22
+undefined
+x1 - y1
+VM942:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM942:1
+document.getElementById("btn");
+<button id=​"btn">​Click Me​</button>​
+var count = 0;
+undefined
+document.getElementById("btn").addEventListener("click",function(){
+	count += 1;
+	console.log("Count is",count);
+})
+undefined
+VM1185:3 Count is 1
+VM1185:3 Count is 2
+VM1185:3 Count is 3
+VM1185:3 Count is 4
+VM1185:3 Count is 5
+VM1185:3 Count is 6
+VM1185:3 Count is 7
+VM1185:3 Count is 8
+VM1185:3 Count is 9
+VM1185:3 Count is 10
+VM1185:3 Count is 11
+VM1185:3 Count is 12
+VM1185:3 Count is 13
+VM1185:3 Count is 14
+VM1185:3 Count is 15
+VM1185:3 Count is 16
+VM1185:3 Count is 17
+VM1185:3 Count is 18
+navigator.appCodeName
+"Mozilla"
+navigator.appName
+"Netscape"

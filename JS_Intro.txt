@@ -18,4 +18,13 @@ JScript - ECMA
 
 ECMAScript
 
+Features of Javascript
+- Interpreted Language
+- Dynamically Typed
+- Loosely (Weakly) Typed
+- Event Driven
+- Functional Programming
+- Multi-Paradigm Language
+- Prototype Based
+- DOM (Document Object Model) and BOM (Browser Object Model)
 
