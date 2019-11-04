@@ -63,12 +63,28 @@
             display: block;
         }
         
+        ul li .dropdown li:hover {
+            background-color: lightsalmon;
+        }
+        
         .col {
             display: inline-block;
             background-color: lightgreen;
             width: 33%;
             vertical-align: top;
             margin-top: 50px;
+        }
+        
+        .sub-dropdown {
+            position: absolute;
+            left: 100%;
+            width: 100%;
+            top: 0px;
+            display: none;
+        }
+        
+        .dropdown ul li:hover .sub-dropdown {
+            display: block;
         }
     </style>
 </head>
@@ -95,7 +111,18 @@
             <a href="#">Sports</a>
             <div class="dropdown">
                 <ul>
-                    <li><a href="#">Cricket</a></li>
+                    <li>
+                        <a href="#">Cricket</a>
+                        <div class="sub-dropdown">
+                            <ul>
+                                <li><a href="#">Bat</a></li>
+                                <li><a href="#">Bowl</a></li>
+                                <li><a href="#">Wickets</a></li>
+                                <li><a href="#">Gloves</a></li>
+                                <li><a href="#">Full Kit</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="#">Football</a></li>
                     <li><a href="#">Hockey</a></li>
                     <li><a href="#">Chess</a></li>
