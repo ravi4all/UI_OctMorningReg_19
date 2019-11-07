@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        
+        #div_2 {
+            overflow: hidden;
+        }
+        
+        #div_2 img {
+            /* width: 100%; */
+            transition: 1s;
+            transform: translateX(-300px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <!-- <div onmouseover="changeImg(this)" onmouseout="changeImg2(this)">
+        <h2>Change Image on hover</h2>
+        <img src="../../images/00-22.gif" alt="">
+    </div> -->
+
+    <div onmouseover="changeImg()" onmouseout="changeImg2()">
+        <h2>Change Image on hover</h2>
+        <img src="../../images/00-22.gif" alt="" id="img">
+    </div>
+
+    <div id="div_2" onmousemove="animateImg()">
+        <img id="img2" src="../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg" alt="">
+    </div>
+
+    <script>
+        function changeImg(obj) {
+            // obj.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+            document.querySelector("#img").src = "../../images/hulk5-18463.gif";
+        }
+
+        function changeImg2(obj) {
+            // obj.innerHTML = '<img src="../../images/00-22.gif" alt="">';
+            document.querySelector("#img").src = "../../images/00-22.gif";
+        }
+
+        function animateImg() {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            document.querySelector("#img2").style.transform = 'translate(' + mouseX * 0.4 + 'px,' + mouseY * 0.4 + 'px)';
+        }
+    </script>
+</body>
+
+</html>

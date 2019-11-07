@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Blur Event</h1>
+
+    <input type="text" placeholder="Enter first name" onblur="show(this)">
+    <input type="text" placeholder="Enter last name" onblur="show(this)">
+
+    <script>
+        function show(obj) {
+            // alert("Blur Called...");
+            var str = obj.value;
+            // Truthy and Falsy
+            if (!str) {
+                obj.style.border = "1px solid red";
+            } else {
+                obj.style.border = "1px solid green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
