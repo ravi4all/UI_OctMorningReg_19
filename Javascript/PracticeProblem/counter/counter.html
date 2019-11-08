@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Counter</h1>
+
+    <button onclick="increment()">+</button>
+
+    <span id="result">0</span>
+
+    <button onclick="decrement()">-</button>
+
+    <script>
+        var counter = 0;
+
+        function increment() {
+            counter += 1;
+            document.querySelector("#result").innerHTML = counter;
+        }
+
+        function decrement() {
+            counter -= 1;
+            document.querySelector("#result").innerHTML = counter;
+        }
+    </script>
+
+</body>
+
+</html>
