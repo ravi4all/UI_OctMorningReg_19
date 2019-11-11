@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative;
+        }
+        
+        #img_1 {
+            background-image: url("img_1.png");
+            height: 150px;
+            width: 160px;
+            background-size: 100% 100%;
+            position: absolute;
+            cursor: none;
+        }
+        
+        #missile {
+            background-image: url("http://www.clker.com/cliparts/T/x/t/m/i/9/missile-md.png");
+            height: 60px;
+            width: 120px;
+            transform: rotate(90deg);
+            background-size: 100% 100%;
+            position: absolute;
+            z-index: -1;
+            /* display: none; */
+            /* left: 100px; */
+            /* top: 100px; */
+        }
+        
+        #missile.block {
+            display: block;
+            animation: fire 0.3s linear;
+            animation-delay: 0.01s;
+        }
+        
+        @keyframes fire {
+            0% {
+                transform: translateY(0%) rotate(90deg);
+            }
+            100% {
+                transform: translateY(-500px) rotate(90deg);
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="img_1"></div>
+        <div id="missile"></div>
+    </div>
+
+</body>
+
+</html>
