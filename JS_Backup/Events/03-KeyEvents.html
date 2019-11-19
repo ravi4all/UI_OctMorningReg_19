@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>KeyEvents</h1>
+
+    <!-- KeyPress
+    KeyDown
+    KeyUp -->
+
+    <!-- <input type="text" onkeypress="showName(this)"> -->
+    <!-- <input type="text" onkeydown="showName(this)"> -->
+    <input type="text" onkeyup="showName(this)">
+    <span id="res"></span>
+
+    <script>
+        function showName(obj) {
+            // alert("Key Pressed");
+            var username = obj.value;
+            document.querySelector("#res").innerHTML = username;
+            if (username > 0 && username < 5) {
+
+            } else if (username >= 5 && username < 10) {
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

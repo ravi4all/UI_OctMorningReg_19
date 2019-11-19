@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 10%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            margin-left: -5%;
+            margin-top: -10%;
+            cursor: none;
+        }
+        
+        div {
+            border: 2px solid red;
+            height: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Move</h1>
+
+    <div id="div_1" onmousemove="doAnimation()">
+        <img id="img" src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4f9.png" alt="">
+    </div>
+
+    <script>
+        var img = document.querySelector("#img");
+
+        function doAnimation() {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            img.style.left = mouseX + "px";
+            img.style.top = mouseY + "px";
+        }
+    </script>
+</body>
+
+</html>

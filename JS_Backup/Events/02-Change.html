@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Change Event</h1>
+
+    <input type="text" onchange="checkName(this)">
+
+    <script>
+        function checkName(obj) {
+            // alert("Blur Called...");
+            // obj.style.border = "1px solid red";
+            if (obj.value == "") {
+                obj.style.border = "1px solid red";
+            } else {
+                obj.style.border = "1px solid green";
+            }
+        }
+    </script>
+</body>
+
+</html>

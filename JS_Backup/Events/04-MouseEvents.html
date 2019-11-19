@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <div onmouseover="changeImage()" onmouseout="changeImage_2()">
+        <img id="img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1567812930312" alt="">
+    </div>
+
+    <script>
+        var img = document.querySelector("#img");
+
+        function changeImage() {
+            img.src = "https://www.att.com/catalog/en/idse/Apple/Apple%20iPhone%2011%20Pro%20Max/Midnight%20Green-hero-zoom.png";
+        }
+
+        function changeImage_2() {
+            img.src = "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1567812930312";
+        }
+    </script>
+</body>
+
+</html>
