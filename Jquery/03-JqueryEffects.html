@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <!-- Fade Effect
+    Hide Effect
+    Slide Effect -->
+
+    <button id="btn_1">Hide</button>
+    <button id="btn_2">Show</button>
+    <button id="btn_3">Toggle</button>
+
+    <div>
+        <img src="../lion.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        // $("#btn_1").click(function() {
+        //     $("img").hide(2000);
+        // });
+        // $("#btn_2").click(function() {
+        //     $("img").show(2000);
+        // });
+        // $("#btn_3").click(function() {
+        //     $("img").toggle(2000);
+        // });
+
+        // $("#btn_1").click(function() {
+        //     $("img").fadeOut(2000);
+        // });
+        // $("#btn_2").click(function() {
+        //     $("img").fadeIn(2000);
+        // });
+        // $("#btn_3").click(function() {
+        //     $("img").fadeToggle(2000);
+        // });
+
+        $("#btn_1").click(function() {
+            $("div").slideUp(2000);
+        });
+        $("#btn_2").click(function() {
+            $("div").slideDown(2000);
+        });
+        $("#btn_3").click(function() {
+            $("div").slideToggle(2000);
+        });
+    </script>
+</body>
+
+</html>

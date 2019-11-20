@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                var username = $("#box").val();
+                $("#username").html(username);
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Basic Jquery Syntax</h1>
+
+    <input type="text" placeholder="Enter your name" id="box">
+    <button id="btn">Click Here</button>
+    <h2>Hello <span id="username"></span></h2>
+
+</body>
+
+</html>

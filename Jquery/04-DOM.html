@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        li {
+            border: 2px solid red;
+            width: 25%;
+            margin: 0px 10px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jquery DOM</h1>
+
+    <ul>
+        <li>
+            <h2>Song_1</h2>
+            <button title="1">Song title</button>
+            <button>Add to playlist</button>
+        </li>
+        <li>
+            <h2>Song_2</h2>
+            <button title="2">Song title</button>
+            <button>Add to playlist</button>
+        </li>
+        <li>
+            <h2>Song_3</h2>
+            <button title="3">Song title</button>
+            <button>Add to playlist</button>
+        </li>
+        <li>
+            <h2>Song_4</h2>
+            <button title="4">Song title</button>
+            <button>Add to playlist</button>
+        </li>
+    </ul>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil('ul').hide(1000);
+            // $(this).siblings().hide(1000);
+            // $(this).siblings('button').hide(1000);
+            // $(this).parent('li').next('li').hide(2000);
+            // $(this).parent('li').nextAll('li').hide(2000);
+            $(this).parent('li').next('li').find('button').hide(1000);
+        })
+    </script>
+</body>
+
+</html>
