@@ -1,0 +1,155 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Generic Sections */
+
+#header {}
+
+#main-navigation {}
+
+#footer {}
+
+
+/* Section_1 */
+
+#audioPlayer {
+    margin-top: 20px;
+}
+
+#audio {
+    width: 80%;
+}
+
+#songsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#songsList li {
+    margin-bottom: 20px;
+    width: 23%;
+    text-align: center;
+    transition: 1s;
+    position: relative;
+}
+
+#songsList img {
+    width: 100%;
+    height: 200px;
+}
+
+#songsList li:hover {
+    box-shadow: 10px 10px 15px lightgray;
+}
+
+#songsList li h5 {
+    margin-bottom: 0px;
+}
+
+#next_song,
+#prev_song {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* background-color: transparent; */
+    border: none;
+    background-size: 80% 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#next_song {
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_439470.png");
+}
+
+#prev_song {
+    transform: rotateY(180deg);
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_439470.png");
+}
+
+.play,
+.playList {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+}
+
+.play {
+    background-image: url("https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4f9.png");
+}
+
+.playList {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/plus+icon-1320168703597804908.png");
+}
+
+#songsList .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    height: 80%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    display: flex;
+}
+
+#songsList li:hover .overlay {
+    opacity: 1;
+}
