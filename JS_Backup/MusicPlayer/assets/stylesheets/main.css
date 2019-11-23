@@ -120,7 +120,8 @@ a {
 }
 
 .play,
-.playList {
+.playList,
+.delete {
     display: inline-block;
     background-color: transparent;
     border: none;
@@ -135,6 +136,10 @@ a {
 
 .playList {
     background-image: url("https://icons-for-free.com/iconfiles/png/512/plus+icon-1320168703597804908.png");
+}
+
+.delete {
+    background-image: url("https://enterpriseengineeringnetwork.org/images/delete-png-1.png");
 }
 
 #songsList .overlay {
@@ -152,4 +157,17 @@ a {
 
 #songsList li:hover .overlay {
     opacity: 1;
+}
+
+#playList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+#playList li img {
+    width: 10%;
 }
