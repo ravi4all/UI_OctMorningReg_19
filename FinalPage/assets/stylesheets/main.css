@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: rgba(245, 245, 245, 0.42);
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .ph_no {
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+}
+
+#main-navigation {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#main-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#main-navigation ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
