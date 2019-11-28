@@ -1,0 +1,250 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+
+}
+body{
+    font-family: 'Arimo', sans-serif;
+    letter-spacing:1px;
+    }
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#footer{
+    width:100%;
+    
+}
+
+.container{
+    width:1200px;
+    margin:0 auto;
+    }
+
+.row{
+        display:flex;
+        justify-content: space-between;
+        margin-top:50px;
+        
+    }
+
+
+    .col{
+        width:30%;
+        
+        
+    }
+    h4{
+        color:#47c19b;
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+    }
+
+ #footer .row .col-1   h4{
+        color:#47c19b;
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+    }
+
+  #footer .row .col-1  .about{
+        margin-top: 15px;
+       }
+
+#footer .row .col-1  .about p{
+    font-size: 15px;
+    color:black;
+    letter-spacing: 1px;
+    line-height: 34px;
+    text-align: center;
+}
+
+#footer .col-1 h5 {
+    font-size: 17px;
+    padding-top:10px;
+    text-align:center;
+    
+}
+
+#footer .social ul{
+    display:flex;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+#social li{
+    display: inline;
+}
+
+#footer .social ul li a i{
+    font-size: 14px;
+    width:34px;
+    height:34px;
+    line-height: 33px;
+    border:1px solid black;
+    text-align: center;
+    margin-left:10px;
+}
+
+
+#footer .row-2 p{
+    background-color: orangered;
+    text-align: center;
+    padding: 0.8em 0;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    margin-top:80px ;
+}
+
+
+
+
+
+
+
+#footer .about{
+    margin-top: 15px;
+   }
+
+
+#footer .about li{
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px dotted;
+    padding: 0px 0px 7px;
+    margin-bottom: 15px;
+    display: flex;
+    border-bottom: 1px dotted;
+    
+}
+#footer .col-2 .time{
+    
+    margin-left:auto;
+ }
+
+#footer .col-2 .about li a{ color:black;
+    font-size: 14px;
+}
+#footer .col-3 .links ul{
+    text-align: center;
+    margin-top:25px;
+    
+}
+#footer .col-3 .links li{
+    margin-bottom: 15px;
+}
+#footer .col-3 .links li a{
+    color:black;
+    font-size: 14px;
+    letter-spacing:1px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+#footer .row-2 p{
+    background-color: orangered;
+    text-align: center;
+    padding: 0.8em 0;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    margin-top:80px ;
+}
+
+
+@media(max-width:1200px)
+{ 
+    .container{
+        width:960px;
+        
+    }
+
+#footer .row .col-1  .about p{
+    line-height:24px ;
+}
+#footer .social ul{
+    margin-left: 64px;
+}
+}
+
+@media(max-width:992px)
+{ 
+    .container{
+        width:760px;
+    }
+    #footer .social ul{
+        margin-left: 36px;
+    }
+}
+
+@media(max-width:768px)
+{ .container{
+    width:100%;
+}
+   .row{
+    display: inline-block;
+   }
+   .col{
+       width:90%;
+       margin:0 auto;
+    
+   }
+#footer .row .col-1   h4{
+text-align: center;
+}
+#footer .row .col-1   p{
+    text-align: center;
+    }
+    .social ul  { display:flex;
+        justify-content: center; 
+        
+        width:60%;
+        margin-right:60px;
+        
+       }
+      .social ul li a{
+          text-align: center;
+      }
+   
+       .table {
+           width:40%;
+           display:flex;
+           justify-content: center; 
+           margin:0 auto;
+             
+       } 
+    
+      
+}
+
+@media(max-width:600px)
+{
+    .container{
+        width:100%;
+    }
+}

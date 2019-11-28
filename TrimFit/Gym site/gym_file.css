@@ -1,0 +1,88 @@
+ body{
+    font-family: 'Arimo', sans-serif;
+    margin: 2px 0px;
+}
+banner{
+    position: relative;
+    top: 0px;
+    }
+    .banner .banner_1{
+        width: 500px;
+        height: 500px;
+    }
+    .banner .banner_1 img{
+        width: 320%;
+        height: 160%;
+     
+    }
+ .header{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+     top: 0px;
+         background-color: rgba(200, 120, 110, 0.5);
+
+}
+.header .row{
+    display: flex;  
+}
+ 
+ .header .row .nav-left{
+    
+     margin: 20px;
+     margin-bottom: 5px;
+     font-size: 37px;
+     font-weight: 500;
+     color: #ffffff !important;
+     letter-spacing: 2px;
+ }
+ .nav-right{
+
+    text-align: center;
+    margin-top:30px;
+     margin-left: 70%;
+     font-size: 18px;
+     margin-bottom: 10px;
+     font-weight: 500;
+     color: #ffffff ;
+     
+}
+.header .nav-bottom ul{
+background-color: rgba(2, 2, 3, 0.3);
+margin-left: 15px;
+margin-right: 15px;
+display: flex;
+height: 50px;
+
+}
+.banner_text{
+    position: absolute;
+    color: #ffffff;
+    
+    
+}
+.banner_text .banner_1text p{
+    
+    font: 300;
+    font-size: 40px;
+}
+
+
+
+
+
+.header .nav-bottom ul li {
+    display: inline;
+    flex: 1 1 auto;
+   height: 20px;
+   padding: 15px 20px;
+}
+.header .nav-bottom ul li a{
+    text-decoration: none;
+    margin: 0px 4px;
+    font-size: 15   px;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white !important;
+}
